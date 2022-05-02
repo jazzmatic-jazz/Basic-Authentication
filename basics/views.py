@@ -9,12 +9,12 @@ from rest_framework.permissions import IsAuthenticated
 class Employee(ModelViewSet):
     queryset = Employee.objects.all()
     serializer_class = EmployeeSerializer
-    authentication_classes = [BasicAuthentication,]
+    #authentication_classes = [BasicAuthentication,]
     
     def get(self, request, format=None):
         content = {
             'user': str(request.user)
         }
         return Response(content)
-        
+
     permission_classes = [IsAuthenticated,]
