@@ -1,0 +1,5 @@
+b_env/
+db.sqlite3
+basics/migrations
+basic_auth_project/.env
+imp.txt
